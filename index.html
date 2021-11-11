@@ -9,10 +9,16 @@
 <h1>
 Jane Loves Tunes!
 </h1>
-<img src="happyme.JPEG" alt="me" width = "350" height = "480">
+<div class="container">
+ <div class="image">
+<img src="happyme.JPEG" alt="me">
+ </div>
+ <div class="text">
 <p>
  My name is Jane Walker, and I love tunes! I have been listening to music obsessively since I was 13 and I make playlists whenever I am stressed or sad which is often. Here are some of my favorite bangers!
 </p>
+ </div>
+</div>
 </body>
 <style>
 h1 {
@@ -24,13 +30,23 @@ h1 {
 body{
 background-color: DarkOliveGreen
 }
-p {
+.container {
+  display: flex;
+  align-items: center;
+  justify content: center;
+  }
+img{
+ max-width: 100%
+ }
+ .image{
+ flex-basis: 40%
+ }
+ .text{
  color: Indigo;
  font-family: Arial, Helvetica, sans-serif;
  font-size: medium;
  text-align: right;
- column-count: 1;
- column-width: 200
+ padding-left: 20px
  }
 </style>
  </html>
